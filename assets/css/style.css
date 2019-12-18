@@ -1,6 +1,6 @@
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 0 100px 0;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777;
   background-image: url("../images/spikes.png");
@@ -19,6 +19,8 @@ main {
   line-height: 1.5;
  }
 
+/* header / nav bar styling */
+
 header {
   background-color: #ffffff;
   border-bottom: 3px solid #cccccc;
@@ -26,33 +28,19 @@ header {
  
 }
 
-/* does this even do anything? */
-/* .clearfix::after {
-  content: " ";
-  display: block;
-  clear: both;
-} */
-
 .header-container {
   width: 960px;
   margin: 0 auto;
   position:relative;
-
 }
-
 
 header h1 {
   width: 250px;
   text-align:center;
-  /* float: left; */
-
   background-color: #4aaaa5;
   color: #ffffff;
-  /* vertical-align: middle; */
   padding: 1em;
   margin: 0;
-  /* margin: 0;
-  padding:0; */
 }
 
 /* find a better way to align center verticalliy */
@@ -66,7 +54,6 @@ nav  {
 }
 
 nav a {
-  /* top: 50%; */
   text-decoration: none;
   padding: 0 2em 0 2em;
 }
@@ -75,21 +62,12 @@ a:visited{
   color: #777777;
 }
 
-
 h1 {
   font-family: 'Georgia', Times, 'Times New Roman', serif;
   color: #4aaaa5
 }
 
-footer {
-  background-color: #666666;
-  border-top: 8px solid #4aaaa5;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 3em 0 3em 0;
-  text-align:center;
-}
+/* image on about me page */
 
 .profile-pic {
   width: 150px;
@@ -97,6 +75,19 @@ footer {
   padding: 0 1em 0 0;
 }
 
+/*  sticky footer -- must adjust body bottom margin so that content is not blocked when scrolling to bottom  */
+
+footer {
+  background-color: #666666;
+  border-top: 8px solid #4aaaa5;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  text-align:center;
+}
+
+/* contact page styling */
 
 .text-field {
   width: 100%;
@@ -110,7 +101,6 @@ footer {
 
 form label {
   color:red;
-
 }
 
 form input {
@@ -122,4 +112,39 @@ form button {
   background-color: #4aaaa5;
   color: white;
   padding: 1em;
+}
+
+/* portfolio page styling */
+
+.card {
+  width: 250px;
+  height: 250px;
+  margin: 2em 2em 0 0;
+  position: relative;
+  float: left;
+}
+
+.card-img {
+  width: 100%;
+  height:100%;
+}
+
+.card-caption {
+  width: 100%;
+  text-align:center;
+  background-color: #4aaaa5;
+  color: white;
+  opacity: 80%;
+  position: absolute;
+  top:70%;
+  margin: 0;
+  padding:0;
+}
+
+/* clear fix */
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
 }
