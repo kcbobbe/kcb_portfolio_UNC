@@ -11,21 +11,36 @@ main {
   width: 960px;
   margin: 2em auto;
   border: 2px solid #dddddd;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background: rgb(255,255,255);
+  border-radius: 5px;
+
  }
 
  .container {
-  padding: 1em;
+  padding: 2em;
   line-height: 1.5;
+
  }
 
+ .horizontal-line {
+   margin: 0 0 2em 0;
+ }
 /* header / nav bar styling */
 
 header {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background: rgb(255,255,255, .6);
+  /* background: linear-gradient(180deg, rgba(255,255,255,0.7581983024691358) 0%, rgba(204,204,204,1) 100%); */
+
   border-bottom: 3px solid #cccccc;
   height: 100px;
- 
+  overflow: auto;
+  -webkit-box-shadow: 0px 13px 125px 23px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 13px 125px 23px rgba(204,204,204,1);
+  box-shadow: 0px 13px 125px 23px rgba(204,204,204,1);
+  
+
 }
 
 .header-container {
@@ -34,19 +49,30 @@ header {
   position:relative;
 }
 
-header h1 {
+.logo {
+  display:block;
   width: 250px;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  font-size:32px;
+  font-weight:bold;
   text-align:center;
-  background-color: #4aaaa5;
+  text-decoration: none;
+  /* background-color: #4aaaa5; */
+  background: rgb(74,170,165);
+  /* background: linear-gradient(180deg, rgba(74,170,165,0.5032387955182073) 0%, rgba(74,170,165,1) 100%); */
+      
   color: #ffffff;
   padding: 1em;
   margin: 0;
 }
 
+.logo:hover {
+  opacity:60%;
+  cursor: pointer;
+}
+
 /* find a better way to align center verticalliy */
 nav  {
-  /* height: 100px; */
-  /* position: absolute; */
   float: right;
   position: absolute;
   top: 42px;
@@ -55,12 +81,20 @@ nav  {
 
 nav a {
   text-decoration: none;
+  font-weight:bold;
   padding: 0 2em 0 2em;
+  color: #777777
+}
+
+nav a:hover {
+  color: #444444;
+  cursor: pointer;
 }
 
 a:visited{
-  color: #777777;
+  color: #444444'
 }
+
 
 h1 {
   font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -78,7 +112,8 @@ h1 {
 /*  sticky footer -- must adjust body bottom margin so that content is not blocked when scrolling to bottom  */
 
 footer {
-  background-color: #666666;
+  background-color: rgb(102,102,102,.9);
+  color: #dddddd;
   border-top: 8px solid #4aaaa5;
   position: fixed;
   bottom: 0;
@@ -96,22 +131,30 @@ footer {
 }
 
 .text-box {
+  width: 100%;
   height: 200px;
+  font-size: 16px;
 }
 
 form label {
-  color:red;
+  color:#777777;
 }
 
 form input {
   margin: 0 0 .5em 0;
 }
 
-form button {
+.contact-button {
   font-size: 1.25em;
   background-color: #4aaaa5;
   color: white;
   padding: 1em;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.contact-button:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 
 /* portfolio page styling */
@@ -122,6 +165,14 @@ form button {
   margin: 2em 2em 0 0;
   position: relative;
   float: left;
+  -webkit-box-shadow: 28px 36px 28px -16px rgba(204,204,204,0.77);
+  -moz-box-shadow: 28px 36px 28px -16px rgba(204,204,204,0.77);
+  box-shadow: 28px 36px 28px -16px rgba(204,204,204,0.77);
+}
+
+.card:hover {
+  opacity:.5;
+  cursor: pointer;
 }
 
 .card-img {

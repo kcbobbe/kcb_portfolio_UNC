@@ -19,7 +19,13 @@ This project has three pages: "About Me", "Contact", and "Portfolio". Even thoug
 
 ## Credits
 
-https://unc.bootcampcontent.com/UNC-Coding-Boot-Camp/UNC-MOR-FSF-PT-12-2019-U-C/tree/master/01-html-git-css
+https://unc.bootcampcontent.com/
+
+https://www.cssmatic.com/box-shadow
+
+https://cssgradient.io/
+
+UNC-Coding-Boot-Camp/UNC-MOR-FSF-PT-12-2019-U-C/tree/master/01-html-git-css
 
 
 ## License
