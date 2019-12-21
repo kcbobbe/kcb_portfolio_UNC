@@ -2,9 +2,9 @@
 
 ## Description 
 
-This portfolio was created using HTML and CSS without a framework. Some of the focuses of the project was to utilize semantic HTML, CSS positioning and floats, and CSS selectors.
+This portfolio was created using HTML and CSS without using a CSS framework. Some of the focuses of the project were to utilize semantic HTML, CSS positioning and floats, and CSS selectors.
 
-The project was created with the following mockups as a guide:
+The portfoio page was created to match the specifications and design of a mockup image.
 
 
 ## Installation
@@ -15,7 +15,7 @@ The project was created with the following mockups as a guide:
 
 ## Usage 
 
-This project has three pages: "About Me", "Contact", and "Portfolio". Even though this portfolio features content specific to me, the project can be used a portfolio template. Content, such as the images and text of the HTML files can be replaced and personalized. Another way to customize this project would be to change the colors of the elements.
+This project has three pages: "About Me", "Contact", and "Portfolio". Even though this portfolio features content specific to me, the project can be used a portfolio template. Content such as the images and text of the HTML files can be replaced and personalized. Another way to customize this project would be to change the colors of the elements.
 
 ## Credits
 
@@ -24,6 +24,9 @@ https://unc.bootcampcontent.com/
 https://www.cssmatic.com/box-shadow
 
 https://cssgradient.io/
+
+<!-- background tile image: Spikes Pattern by Omer Ozer -->
+https://www.toptal.com/designers/subtlepatterns/spikes-pattern/
 
 UNC-Coding-Boot-Camp/UNC-MOR-FSF-PT-12-2019-U-C/tree/master/01-html-git-css
 
