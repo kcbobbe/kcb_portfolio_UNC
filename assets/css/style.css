@@ -7,6 +7,7 @@ body {
   background-repeat: repeat;
 }
 
+
 main {
   width: 960px;
   margin: 2em auto;
@@ -17,22 +18,21 @@ main {
 
  }
 
+ p {
+   font-size: 20px;
+   line-height: 1.5em;
+ }
+
  .container {
   padding: 2em;
-  line-height: 1.5;
+  line-height: 1.5em;
 
  }
-
- .horizontal-line {
-   margin: 0 0 2em 0;
- }
-/* header / nav bar styling */
 
 header {
   /* background-color: #ffffff; */
   background: rgb(255,255,255, .6);
   /* background: linear-gradient(180deg, rgba(255,255,255,0.7581983024691358) 0%, rgba(204,204,204,1) 100%); */
-
   border-bottom: 3px solid #cccccc;
   height: 100px;
   overflow: auto;
@@ -57,10 +57,7 @@ header {
   font-weight:bold;
   text-align:center;
   text-decoration: none;
-  /* background-color: #4aaaa5; */
   background: rgb(74,170,165);
-  /* background: linear-gradient(180deg, rgba(74,170,165,0.5032387955182073) 0%, rgba(74,170,165,1) 100%); */
-      
   color: #ffffff;
   padding: 1em;
   margin: 0;
@@ -71,7 +68,7 @@ header {
   cursor: pointer;
 }
 
-/* find a better way to align center verticalliy */
+/* find a better way to align center verticalliy? */
 nav  {
   float: right;
   position: absolute;
@@ -91,10 +88,6 @@ nav a:hover {
   cursor: pointer;
 }
 
-a:visited{
-  color: #444444'
-}
-
 
 h1 {
   font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -107,6 +100,7 @@ h1 {
   width: 150px;
   float: left;
   padding: 0 1em 0 0;
+  margin:.5em .5em 0 0;
 }
 
 /*  sticky footer -- must adjust body bottom margin so that content is not blocked when scrolling to bottom  */
@@ -144,11 +138,17 @@ form input {
   margin: 0 0 .5em 0;
 }
 
+/* for some reason the default color for the text input is lighter than the textarea */
+.text-box {
+  border-color:lightgrey;
+}
+
 .contact-button {
   font-size: 1.25em;
   background-color: #4aaaa5;
   color: white;
   padding: 1em;
+  margin-top: 1em;
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -189,7 +189,7 @@ form input {
   position: absolute;
   top:70%;
   margin: 0;
-  padding:0;
+  padding:.5em 0;
 }
 
 /* clear fix */
